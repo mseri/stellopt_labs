@@ -1,0 +1,100 @@
+STELLOPT Version  2.75
+  Equilibrium calculation provided by: 
+  =================================================================================
+  =========   Parallel Variational Moments Equilibrium Code (v 9.0)       =========
+  =========                (S. Hirshman, J. Whitson)                      =========
+  =========         http://vmecwiki.pppl.wikispaces.net/VMEC              =========
+  =================================================================================
+     
+ -----  MPI Params.   -----
+    MPI Version:  3.01
+    Optimizers requested:           -1
+    Number of Processors:           10
+    Shared memory groups:            1
+    Processors per group:           10
+   Workers per optimizer:            1
+     Optimizers provided:           10
+ -----  Optimization  -----
+    =======VARS=======
+     DELTA(-001, 001):  Boundary Specifiction (Garabedian)
+   == Accuracy of conversion =  100.00%  ==
+    ======TARGETS=====
+     Rotational Transform
+    ==================
+    Number of Parameters:            1
+    Number of Targets:               1
+    !!!! EQUILIBRIUM RESTARTING NOT UTILIZED !!!!
+ ---------------------------  EQUILIBRIUM CALCULATION  ------------------------
+
+  NS =   13 NO. FOURIER MODES =   41 FTOLV =  1.000E-16 NITER =    600
+  PROCESSOR COUNT - RADIAL:    1
+
+  ITER    FSQR      FSQZ      FSQL    RAX(v=0)    DELT       WMHD
+
+    1  1.14E-04  9.45E-05  1.06E-04  1.100E+00  9.00E-01  1.2513E+04
+  200  1.89E-12  1.94E-12  1.25E-12  1.100E+00  9.00E-01  1.2511E+04
+  400  8.17E-14  8.08E-14  3.74E-14  1.100E+00  9.00E-01  1.2511E+04
+  600  1.08E-15  2.51E-16  4.49E-16  1.100E+00  9.00E-01  1.2511E+04
+
+  NS =   25 NO. FOURIER MODES =   41 FTOLV =  1.000E-12 NITER =   4000
+  PROCESSOR COUNT - RADIAL:    1
+
+  ITER    FSQR      FSQZ      FSQL    RAX(v=0)    DELT       WMHD
+
+    1  1.36E-08  7.88E-09  1.11E-10  1.100E+00  9.00E-01  1.2511E+04
+   93  8.34E-13  9.91E-13  2.94E-15  1.100E+00  9.00E-01  1.2511E+04
+
+ EXECUTION TERMINATED NORMALLY
+
+ FILE : test_opt0
+ NUMBER OF JACOBIAN RESETS =    0
+
+    TOTAL COMPUTATIONAL TIME (SEC)         1.10
+    TIME TO INPUT/OUTPUT                   0.02
+       READ IN DATA                        0.00
+       WRITE OUT DATA TO WOUT              0.02
+    TIME IN FUNCT3D                        1.06
+       BCOVAR FIELDS                       0.16
+       FOURIER TRANSFORM                   0.22
+       INVERSE FOURIER TRANSFORM           0.13
+       FORCES AND SYMMETRIZE               0.20
+       RESIDUE                             0.25
+       EQFORCE                             0.00
+ -------------------------  PARAVMEC CALCULATION DONE  -----------------------
+     ASPECT RATIO:  100.000
+             BETA:    0.000  (total)
+                      0.000  (poloidal)
+                      0.000  (toroidal)
+  TORIDAL CURRENT:    0.485722573274E-09
+     TORIDAL FLUX:    1.000
+           VOLUME:    0.002
+     MAJOR RADIUS:    1.000
+     MINOR RADIUS:    0.010
+       AXIS FIELD:  *******
+    STORED ENERGY:    0.000000000000E+00
+
+Optimization with MANGO (https://github.com/hiddenSymmetries/mango)
+ optimization algorithm: gsl_dogleg
+
+ worker group,  objective function
+ ---------------------------------
+    0   1.787525981644385E-02
+    0   1.787828183977827E-02
+    1   1.787528629873613E-02
+    0   1.819708597943353E-02
+    0   1.819530729780112E-02
+    0   1.819538714874421E-02
+    0   1.819542404880005E-02
+    0   1.819544073893417E-02
+    0   1.819544847685350E-02
+    0   1.819545174025300E-02
+    0   1.819545322723607E-02
+    0   1.818965283743075E-02
+    0   1.803347905509452E-02
+    0   1.795635511745693E-02
+    0   1.791780398139161E-02
+    0   1.789867829790296E-02
+    0   1.788912537718985E-02
+    0   1.788432480331132E-02
+    0   1.788195444203047E-02
+----- STELLOPT DONE -----

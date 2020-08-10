@@ -1,0 +1,166 @@
+STELLOPT Version  2.75
+  Equilibrium calculation provided by: 
+  =================================================================================
+  =========   Parallel Variational Moments Equilibrium Code (v 9.0)       =========
+  =========                (S. Hirshman, J. Whitson)                      =========
+  =========         http://vmecwiki.pppl.wikispaces.net/VMEC              =========
+  =================================================================================
+     
+ -----  MPI Params.   -----
+    MPI Version:  3.01
+    Optimizers requested:           -1
+    Number of Processors:           10
+    Shared memory groups:            1
+    Processors per group:           10
+   Workers per optimizer:            1
+     Optimizers provided:           10
+ -----  Optimization  -----
+    =======VARS=======
+     DELTA(-001, 000):  Boundary Specifiction (Garabedian)
+     DELTA(-001, 001):  Boundary Specifiction (Garabedian)
+     DELTA(-001, 002):  Boundary Specifiction (Garabedian)
+     DELTA( 000, 002):  Boundary Specifiction (Garabedian)
+     DELTA( 001, 000):  Boundary Specifiction (Garabedian)
+     DELTA( 001, 001):  Boundary Specifiction (Garabedian)
+     DELTA( 001, 002):  Boundary Specifiction (Garabedian)
+   == Accuracy of conversion =  100.00%  ==
+    ======TARGETS=====
+     Rotational Transform
+     Boozer Spectrum Helicity
+    ==================
+    Number of Parameters:            7
+    Number of Targets:            1041
+    !!!! EQUILIBRIUM RESTARTING NOT UTILIZED !!!!
+ ---------------------------  EQUILIBRIUM CALCULATION  ------------------------
+
+  NS =   13 NO. FOURIER MODES =   41 FTOLV =  1.000E-16 NITER =    600
+  PROCESSOR COUNT - RADIAL:    1
+
+  ITER    FSQR      FSQZ      FSQL    RAX(v=0)    DELT       WMHD
+
+    1  1.14E-02  9.46E-03  1.07E-02  1.100E+00  9.00E-01  1.2519E+02
+  200  3.52E-10  1.29E-11  7.07E-11  1.091E+00  9.00E-01  1.2370E+02
+  400  9.85E-12  2.40E-13  9.75E-13  1.089E+00  9.00E-01  1.2370E+02
+  600  1.01E-13  9.18E-15  1.98E-14  1.089E+00  9.00E-01  1.2370E+02
+
+  NS =   25 NO. FOURIER MODES =   41 FTOLV =  1.000E-12 NITER =   4000
+  PROCESSOR COUNT - RADIAL:    1
+
+  ITER    FSQR      FSQZ      FSQL    RAX(v=0)    DELT       WMHD
+
+    1  7.51E-05  4.79E-05  2.22E-08  1.089E+00  9.00E-01  1.2370E+02
+  200  1.28E-11  1.24E-11  1.06E-13  1.089E+00  9.00E-01  1.2370E+02
+  292  8.30E-13  8.69E-13  1.40E-14  1.089E+00  9.00E-01  1.2370E+02
+
+ EXECUTION TERMINATED NORMALLY
+
+ FILE : test_opt0
+ NUMBER OF JACOBIAN RESETS =    0
+
+    TOTAL COMPUTATIONAL TIME (SEC)         1.61
+    TIME TO INPUT/OUTPUT                   0.02
+       READ IN DATA                        0.00
+       WRITE OUT DATA TO WOUT              0.02
+    TIME IN FUNCT3D                        1.57
+       BCOVAR FIELDS                       0.25
+       FOURIER TRANSFORM                   0.32
+       INVERSE FOURIER TRANSFORM           0.20
+       FORCES AND SYMMETRIZE               0.30
+       RESIDUE                             0.38
+       EQFORCE                             0.00
+ -------------------------  PARAVMEC CALCULATION DONE  -----------------------
+     ASPECT RATIO:   10.000
+             BETA:    0.000  (total)
+                      0.000  (poloidal)
+                      0.000  (toroidal)
+  TORIDAL CURRENT:   -0.910729824888E-10
+     TORIDAL FLUX:    1.000
+           VOLUME:    0.197
+     MAJOR RADIUS:    1.000
+     MINOR RADIUS:    0.100
+       AXIS FIELD:   34.567
+    STORED ENERGY:    0.000000000000E+00
+ ---------------------------  BOOZER TRANSFORMATION  -------------------------
+  0 <= mboz <=   31    -16 <= nboz <=   16
+  nu_boz =   130 nv_boz =    66
+
+             OUTBOARD (u=0)              JS          INBOARD (u=pi)
+-----------------------------------------------------------------------------
+  v     |B|vmec    |B|booz    Error             |B|vmec    |B|booz    Error
+
+  0    2.756E+01  2.756E+01  5.204E-13   25    4.473E+01  4.473E+01  1.394E-09
+ pi    4.088E+01  4.088E+01  7.004E-14         3.102E+01  3.102E+01  4.444E-09
+
+Optimization with MANGO (https://github.com/hiddenSymmetries/mango)
+ optimization algorithm: gsl_dogleg
+
+ worker group,  objective function
+ ---------------------------------
+    0   3.444252322847768E-01
+    7   3.444252232922132E-01
+    3   3.444241056344848E-01
+    6   3.444252616610997E-01
+    2   3.444347770401874E-01
+    5   3.444252371817418E-01
+    0   3.443669644534162E-01
+    1   3.444252398976120E-01
+    4   3.444253560137868E-01
+    0   7.825042764948852E-01
+    0   6.354183571756884E-02
+    0   6.361041827090615E-02
+    7   6.364517184963489E-02
+    2   6.364149461521899E-02
+    5   6.364419805663042E-02
+    6   6.364410333196277E-02
+    3   6.364404644928225E-02
+    1   6.364422907886115E-02
+    4   6.364435034407953E-02
+    0   1.346406384024745E+00
+    0   3.461234323280198E-01
+    0   1.482732620427498E-01
+    0   9.575194052270133E-02
+    0   7.771291941081855E-02
+    0   7.037097206748436E-02
+    0   6.706920715875424E-02
+    0   6.548186682984140E-02
+    0   6.464925586507346E-02
+    0   6.398397418904840E-02
+    0   6.379590566055052E-02
+    0   6.370313626505240E-02
+    0   6.365670663966379E-02
+    0   6.363351917428646E-02
+    0   6.362193137427280E-02
+    0   6.361613891906229E-02
+    0   6.361324310146556E-02
+    0   6.361179528463455E-02
+    0   6.361107140007910E-02
+    0   6.361070945963250E-02
+    0   6.361052849289227E-02
+    0   6.361043801407250E-02
+    0   6.361039277009310E-02
+    0   6.361037014702181E-02
+    0   6.361035883818081E-02
+    0   6.361035318437919E-02
+    0   6.361035035534175E-02
+    0   6.361034894091531E-02
+    0   6.361034823540765E-02
+    0   6.361034788252616E-02
+    0   6.361034770495884E-02
+    0   6.361034761738144E-02
+    0   6.361034757086147E-02
+    0   6.361034754899147E-02
+    0   6.361034754041014E-02
+    0   6.361034753499194E-02
+    0   6.361034753295136E-02
+    0   6.361034752823427E-02
+    0   6.361034753018102E-02
+    0   6.361034752530562E-02
+    0   6.361034752948527E-02
+    0   6.361034752990233E-02
+    0   6.361034753000035E-02
+    0   6.361034752882515E-02
+    0   6.361034752724966E-02
+    0   6.361034753014408E-02
+    0   6.361034752867166E-02
+    0   6.361034752742609E-02
+----- STELLOPT DONE -----

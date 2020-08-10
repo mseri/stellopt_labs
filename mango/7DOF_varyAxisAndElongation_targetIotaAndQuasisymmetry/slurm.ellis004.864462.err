@@ -1,0 +1,19 @@
+--------------------------------------------------------------------------
+[[18699,1],7]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ellis004
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+[ellis004.pppl.gov:03438] 9 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[ellis004.pppl.gov:03438] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+*******************************************************************************************************
+WARNING! Bound constraints were set, but an algorithm was chosen that does not allow bound constraints.
+Therefore, the bound constraints will be ignored for this calculation.
+*******************************************************************************************************

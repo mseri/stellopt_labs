@@ -1,0 +1,21 @@
+   Optimizers requested:    -1
+   Number of Processors:    10
+   Shared memory groups:     1
+   Processors per group:    10
+noptimizers > ngshar.
+Initial k:   10, MOD(nshar,k):    0
+Final k:   10
+  Workers per optimizer:     1
+    Optimizers provided:    10
+
+rank in MPI_COMM_WORLD, rank in comm_share, optimizer color, rank in MPI_COMM_MYWORLD
+    0,    0,    0,    0
+    1,    1,    1,    0
+    2,    2,    2,    0
+    3,    3,    3,    0
+    4,    4,    4,    0
+    5,    5,    5,    0
+    6,    6,    6,    0
+    7,    7,    7,    0
+    8,    8,    8,    0
+    9,    9,    9,    0
