@@ -1,0 +1,98 @@
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  VMEC OUTPUT FILES ALREADY EXIST: OVERWRITING THEM ...
+  SEQ =    1 TIME SLICE  0.0000E+00
+  PROCESSING INPUT.hsx
+  THIS IS PARVMEC (PARALLEL VMEC), VERSION 9.0
+  Lambda: Full Radial Mesh. L-Force: hybrid full/half.
+
+  COMPUTER:    OS:    RELEASE:   DATE = Aug 11,2020  TIME = 16:27:23
+  Opening vacuum field file: mgrid_hsx.nc
+  Time to read MGRID file:   1.06E-01 s
+
+  NS =    8 NO. FOURIER MODES =   59 FTOLV =  1.000E-07 NITER =  10000
+  PROCESSOR COUNT - RADIAL:    1  VACUUM:    1
+ TRYING TO IMPROVE INITIAL MAGNETIC AXIS GUESS
+  ---- Improved AXIS Guess ----
+      RAXIS_CC =    1.2138016049205567       0.21740189120633766        1.8305598691060101E-002  -1.1556332282596266E-003   1.2967375619190120E-003
+      ZAXIS_CS =   -0.0000000000000000      -0.18083876964769782       -1.8484160420130791E-002  -3.6323168191389030E-003  -1.4237953634008626E-003
+  -----------------------------
+
+  ITER    FSQR      FSQZ      FSQL    RAX(v=0)    DELT        WMHD      DEL-BSQ
+
+    1  7.78E-02  8.77E-02  2.42E-02  1.450E+00  8.00E-01  1.8090E-01  1.000E+00
+
+  In VACUUM, np =  4  mf =  8  nf =  4 nu = 20  nv =   36
+  2*pi * a * -BPOL(vac) =   3.24E-07 TOROIDAL CURRENT =   5.92E-17
+  R * BTOR(vac) =  -1.44E+00 R * BTOR(plasma) =  -1.44E+00
+
+  VACUUM PRESSURE TURNED ON AT   47 ITERATIONS
+
+  180  9.46E-08  8.30E-08  4.92E-08  1.443E+00  6.48E-01  1.7844E-01  8.728E-03
+
+  NS =   16 NO. FOURIER MODES =   59 FTOLV =  1.000E-07 NITER =  10000
+  PROCESSOR COUNT - RADIAL:    1  VACUUM:    1
+
+  ITER    FSQR      FSQZ      FSQL    RAX(v=0)    DELT        WMHD      DEL-BSQ
+
+    1  1.57E+00  8.37E-01  4.93E-05  1.443E+00  8.00E-01  1.7844E-01  8.728E-03
+  138  9.73E-08  6.20E-08  2.24E-08  1.443E+00  7.20E-01  1.7844E-01  7.297E-03
+
+  NS =   32 NO. FOURIER MODES =   59 FTOLV =  1.000E-07 NITER =  10000
+  PROCESSOR COUNT - RADIAL:    1  VACUUM:    1
+
+  ITER    FSQR      FSQZ      FSQL    RAX(v=0)    DELT        WMHD      DEL-BSQ
+
+    1  3.01E+00  1.61E+00  5.70E-06  1.443E+00  8.00E-01  1.7844E-01  7.297E-03
+  200  4.40E-03  1.27E-02  2.07E-05  1.442E+00  8.00E-01  1.7860E-01  8.744E-03
+  400  4.66E-04  1.62E-03  7.35E-06  1.443E+00  8.00E-01  1.7856E-01  7.408E-03
+  600  1.12E-03  5.00E-03  7.79E-06  1.443E+00  8.00E-01  1.7845E-01  7.223E-03
+  752  9.18E-08  5.28E-08  3.95E-08  1.443E+00  7.77E-01  1.7844E-01  6.861E-03
+
+  NS =  101 NO. FOURIER MODES =   59 FTOLV =  1.000E-10 NITER =  10000
+  PROCESSOR COUNT - RADIAL:    1  VACUUM:    1
+
+  ITER    FSQR      FSQZ      FSQL    RAX(v=0)    DELT        WMHD      DEL-BSQ
+
+    1  1.72E+01  9.62E+00  6.94E-06  1.443E+00  8.00E-01  1.7844E-01  6.861E-03
+  200  4.77E-08  2.50E-08  8.73E-09  1.444E+00  6.48E-01  1.7843E-01  6.126E-03
+  400  2.36E-09  9.58E-10  3.39E-10  1.445E+00  6.48E-01  1.7842E-01  5.929E-03
+  600  1.17E-09  3.34E-10  1.49E-10  1.446E+00  6.48E-01  1.7841E-01  5.864E-03
+  800  1.77E-10  4.94E-11  7.86E-11  1.446E+00  6.48E-01  1.7841E-01  5.826E-03
+  877  9.85E-11  3.83E-11  6.35E-11  1.446E+00  6.48E-01  1.7841E-01  5.813E-03
+
+ EXECUTION TERMINATED NORMALLY
+
+ FILE : hsx
+ NUMBER OF JACOBIAN RESETS =    2
+
+    TOTAL COMPUTATIONAL TIME (SEC)        33.22
+    TIME TO INPUT/OUTPUT                   0.45
+       READ IN DATA                        0.12
+       WRITE OUT DATA TO WOUT              0.33
+    TIME IN FUNCT3D                       32.68
+       BCOVAR FIELDS                       2.77
+       FOURIER TRANSFORM                   6.01
+       INVERSE FOURIER TRANSFORM           6.07
+       FORCES AND SYMMETRIZE               3.20
+       RESIDUE                             1.42
+       EQFORCE                             0.00
+       FREE BOUNDARY (VACUUM)              9.55
+          VACUUM SURFACE                   0.51
+          VACUUM BEXTERN                   1.53
+          VACUUM SCALPOT                   7.18
+             ANALYT                        1.85
+                ASUM                       0.19
+                ASUM2                      1.52
+                ALLREDUCE                  0.00
+             GREENF                        3.10
+             FOURP                         1.60
+             ALLREDUCE                     0.00
+             ALLGATHER                     0.00
+             FOURI                         0.55
+          VACUUM ALLGATHER                 0.00
+          VACUUM SOLVER                    0.12
+
+ NO. OF PROCS:     1
+ PARVMEC     :     T
+ LPRECOND    :     F
+ LV3FITCALL  :     F
