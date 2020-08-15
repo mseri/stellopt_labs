@@ -1,0 +1,10 @@
+pyplasmaopt ! coils.* file suffix
+s ! Current format (S/R : Scale current to unit current or use raw currents, old version did not prompt the user for this and assumed scaled current)
+y ! Stellarator Symmetry (y/n)
+0.5 ! Minimum radial extent (Rmin)
+2.0 ! Maximum radial extent (Rmax)
+-0.9 ! Minimum vertical extent (Zmin)
+0.9 ! Maximum vertical extent (Zmax)
+36 ! Number of toroidal cutplanes (per half period if stellarator symmetry is assumed)
+201 ! Number of radial grid points
+201 ! Number of vertical grid points
