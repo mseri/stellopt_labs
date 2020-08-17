@@ -1,0 +1,1 @@
+regcoil regcoil_in.hsx | tee regcoil_output.txt
