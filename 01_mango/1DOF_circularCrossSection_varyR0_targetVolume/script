@@ -1,0 +1,1 @@
+mpiexec -n 4 xstelloptv2 input.test | tee stellopt_output.txt
