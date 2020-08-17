@@ -1,1 +1,0 @@
-xgrid < input_xgrid.dat | tee output.txt
