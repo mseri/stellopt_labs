@@ -9,9 +9,9 @@ terminal (or download ZIP on this page).
 git clone https://github.com/zhucaoxiang/stellopt_labs.git
 ```
 
-## Demonstration
+## 00_stellopt_instructions
 
-Basic demonstration of STELLOPT
+Basic instructions of STELLOPT
 
 ## 01_mango
 
